@@ -1,0 +1,6 @@
+# Wildberries ecosystem.
+wildberries.ru
+wb.ru
+rwb.ru
+wbbasket.ru
+wbstatic.net

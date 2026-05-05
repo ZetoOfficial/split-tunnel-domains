@@ -1,0 +1,8 @@
+# Sber ecosystem.
+sber.ru
+sberbank.ru
+sberdevices.ru
+sbermarket.ru
+sbermegamarket.ru
+megamarket.ru
+domclick.ru

@@ -1,0 +1,7 @@
+# T-Bank / Tinkoff ecosystem.
+tbank.ru
+tinkoff.ru
+tcsbank.ru
+tinkoffjournal.ru
+tinkoffinsurance.ru
+tinkoff-mobile.ru

@@ -1,0 +1,4 @@
+# Avito ecosystem.
+avito.ru
+avito.st
+avito-img.com

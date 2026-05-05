@@ -1,0 +1,4 @@
+# Mail.ru ecosystem.
+mail.ru
+my.mail.ru
+imgsmail.ru

@@ -1,0 +1,9 @@
+# VK ecosystem.
+vk.com
+vk.ru
+vkontakte.ru
+userapi.com
+vk-cdn.me
+vk-cdn.net
+vkuseraudio.net
+vkuservideo.net
