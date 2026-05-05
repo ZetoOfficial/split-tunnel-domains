@@ -17,7 +17,7 @@
 URL списка:
 
 ```text
-https://raw.githubusercontent.com/ZetoOfficial/split-tunnel-domains/master/lists/russia.txt
+https://raw.githubusercontent.com/ZetoOfficial/split-tunnel-domains/refs/heads/master/lists/russia.txt
 ```
 
 В списке используются только форматы, поддержанные GL.iNet VPN Policy:
