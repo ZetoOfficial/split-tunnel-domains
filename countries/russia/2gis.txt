@@ -1,4 +1,2 @@
 # 2GIS ecosystem.
-2gis.ru
-2gis.com
 dgis.ru

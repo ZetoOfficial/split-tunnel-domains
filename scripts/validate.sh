@@ -56,6 +56,10 @@ is_domain() {
 	printf '%s\n' "$1" | grep -Eq '^([a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]([a-z0-9-]{0,61}[a-z0-9])?$'
 }
 
+is_glinet_domain() {
+	printf '%s\n' "$1" | grep -Eq '^([a-z]([a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]([a-z0-9-]{0,61}[a-z0-9])?$'
+}
+
 is_group_entry() {
 	printf '%s\n' "$1" | grep -Eq '^[a-z0-9][a-z0-9-]*$'
 }
@@ -116,12 +120,16 @@ validate_generated_domain_or_ip_file() {
 		lineno=$((lineno + 1))
 
 		case "$line" in
-			'') continue ;;
+			'') print_error "$file" "$lineno" "blank lines are not allowed in generated list files"; continue ;;
 			\#*) print_error "$file" "$lineno" "comments are not allowed in generated list files"; continue ;;
 		esac
 
 		if validate_domain_or_ip_line "$file" "$lineno" "$line"; then
 			if is_domain "$line"; then
+				if ! is_glinet_domain "$line"; then
+					print_error "$file" "$lineno" "domain labels must start with a letter for GL.iNet subscription detection"
+					continue
+				fi
 				printf '%s:%s:%s\n' "$file" "$lineno" "$line" >> "$generated_domains_tmp"
 			fi
 		fi

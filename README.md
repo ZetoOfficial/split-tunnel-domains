@@ -37,9 +37,10 @@ https://raw.githubusercontent.com/ZetoOfficial/split-tunnel-domains/refs/heads/m
 
 - один домен, IPv4 или IPv4 CIDR на строку;
 - только lowercase;
+- каждая часть домена должна начинаться с буквы;
 - без wildcard, protocol, URL path, port, comma, spaces и IPv6;
 - source-файлы могут содержать комментарии;
-- generated файлы могут содержать только записи и пустые строки между блоками.
+- generated файлы могут содержать только записи, без комментариев и пустых строк.
 
 Перед завершением изменений:
 

@@ -83,9 +83,6 @@ while IFS= read -r name || [ -n "$name" ]; do
 	done < "$source_file"
 
 	if [ -s "$block_tmp" ]; then
-		if [ "$written" -ne 0 ]; then
-			printf '\n' >> "$output_file"
-		fi
 		write_collapsed_block >> "$output_file"
 		written=1
 	fi
